@@ -1,0 +1,171 @@
+ /* CSS reset  */
+ body {
+    margin: 0px;
+    padding: 0px;
+    background-size: 100%;
+    background-image: url('../imgs/photo.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+
+/* LOGO  */
+.logo {
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 15px;
+
+}
+.logo img {
+    height: 58px;
+    width: 58px;
+    margin-left: 33px;
+}
+.logo a {
+    width: 160px;
+    color: black;
+    position: absolute;
+    margin: 0px 20px;
+    font-family: 'Baloo Bhaina 2';
+
+}
+.logo a p {
+    margin: -15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/* NAVBAR  */
+.navbar {
+    /* border: 2px solid green; */
+    display: block;
+    width: 72%;
+    margin: 9px 10px 30px 330px;
+}
+.navbar li {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Baloo Bhaina 2';
+
+}
+.navbar li a {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 23px;
+    padding: 9px 27px;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.navbar li a:hover {
+    text-decoration: underline;
+    text-shadow: 3px 2px 1px rgb(163, 163, 163);
+}
+
+
+/* SLOGAN  */
+.slogan {
+    margin: 66px 50px 0px 50px
+}
+.para {
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    font-size: 85px;
+}
+.redtext {
+    color: rgb(170, 5, 5);
+    display: inline;
+    font-family: 'Oswald', sans-serif;
+    font-size: 85px;
+
+}
+.redtext img {
+    height: 74px;
+
+}
+
+
+/* FORM  */
+.form {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 350px;
+    margin: 20px 60px;
+    /* border: 1px solid rgb(170, 5, 5); */
+    border-radius: 12px;
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+    box-shadow: 0px 0px 22px grey
+}
+.form:hover {
+    /* box-shadow: 4px 4px 3px rgb(168, 112, 112); */
+}
+h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 5px 10px;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 30px;
+}
+.info {
+    margin: 15px 10px;
+    
+}
+input {
+    width: 80%;
+    height: 40px;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    margin: 0px 46px;
+    line-height: 20px;
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.inpt:hover {
+    box-shadow: 3px 3px 3px grey;
+}
+.btn {
+    color: black;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 18px;
+    background-color: rgb(207, 207, 207);
+    width: 77.5%;
+    margin: 0px 56px;
+    border: 0.5px solid grey;
+    transition-property: all ;
+    transition-duration: 200ms;
+}
+.btn:hover {
+    color: white;
+    background-color: rgb(170, 5, 5);
+    box-shadow: 3px 3px 3px rgb(70, 70, 70);
+}
+
+
+/* CHAT BTN  */
+.chatbtn {
+    /* border: 2px solid blue; */
+    display: inline-block;
+    position: fixed;
+    bottom: 5px;
+    right: 7px;
+
+}
+.chatbtn img {
+    margin: 0px 16px;
+}
+.chatbtn p {
+    margin: 0px 10px;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
