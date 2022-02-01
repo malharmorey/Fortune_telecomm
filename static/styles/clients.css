@@ -1,0 +1,113 @@
+.wrapper {
+    position: relative;
+    width: 99vw;
+    height: 90vh;
+}
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 100%;
+    overflow-y: scroll;
+    /* border: 2px solid red; */
+    background: /* Shadow covers */ linear-gradient(
+            white 30%,
+            rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
+        /* Shadows */
+            radial-gradient(
+                50% 0,
+                farthest-side,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0)
+            ),
+        radial-gradient(
+                50% 100%,
+                farthest-side,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0)
+            )
+            0 100%;
+    background: /* Shadow covers */ linear-gradient(
+            white 30%,
+            rgba(255, 255, 255, 0)
+        ),
+        linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
+        /* Shadows */
+            radial-gradient(
+                farthest-side at 50% 0,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0)
+            ),
+        radial-gradient(
+                farthest-side at 50% 100%,
+                rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0)
+            )
+            0 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
+    background-attachment: local, local, scroll, scroll;
+}
+table {
+    position: relative;
+    width: 52%;
+    margin-top: 1rem;
+    border: 1px solid black;
+    border-radius: 14px;
+    border-spacing: 0;
+}
+th {
+    background-color: #c33235;
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    padding: 3px;
+    min-width: 200px;
+    box-shadow: -1px -1px black;
+    border-radius: 12px 12px 0px 0px;
+    border: 0.6px solid black;
+}
+td {
+    font-family: "Montserrat", sans-serif;
+    padding: 3px;
+    min-width: 200px;
+    background: #dce35b;
+    background: -webkit-linear-gradient(to right, #45b649e8, #dce35bea);
+    background: linear-gradient(to right, #45b649e8, #dce35be5);
+    box-shadow: -1px -1px var(black);
+    border: 0.6px solid black;
+}
+.lastChild {
+    border-radius: 0px 0px 12px 12px;
+}
+
+/* Media Quries */
+@media (min-width: 620px) and (max-width: 850px) {
+    table {
+        width: 60%;
+    }
+}
+@media (min-width: 480px) and (max-width: 620px) {
+    table {
+        width: 70%;
+    }
+}
+@media (max-width: 480px) {
+    table {
+        width: 80%;
+    }
+    td {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 400px) {
+    th {
+        font-size: 1.3rem;
+    }
+    td {
+        font-size: 0.8rem;
+    }
+}

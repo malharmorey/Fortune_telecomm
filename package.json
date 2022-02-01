@@ -1,0 +1,25 @@
+{
+  "name": "fortune_telecomm",
+  "version": "1.0.0",
+  "description": "Local business website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malharmorey/Fortune_telecomm.git"
+  },
+  "author": "Malhar Morey",
+  "license": "ISC",
+  "dependencies": {
+    "alert": "^5.0.10",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.6",
+    "pug": "^3.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/malharmorey/Fortune_telecomm/issues"
+  },
+  "homepage": "https://github.com/malharmorey/Fortune_telecomm#readme"
+}

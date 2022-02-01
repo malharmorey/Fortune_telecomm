@@ -1,0 +1,300 @@
+main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -2;
+    background: #dce35b;
+    background: -webkit-linear-gradient(to right, #45b649, #dce35b);
+    background: linear-gradient(to right, #45b649, #dce35b);
+    background-size: cover;
+    opacity: 0.92;
+    height: 60%;
+}
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: clip;
+}
+.dottedImg {
+    position: absolute;
+    display: none;
+}
+.imageBgGradient {
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+    background: linear-gradient(to right, #dce35b, #45b649);
+    right: 7rem;
+    top: 40%;
+    clip-path: circle(9rem at 9rem 9rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sideImage img {
+    height: 5rem;
+    width: 17rem;
+}
+/* BIG-TEXT */
+#bigText {
+    position: relative;
+    height: 25vh;
+    display: flex;
+    align-items: end;
+    margin-left: 3rem;
+    gap: 1rem;
+}
+.blackText {
+    font-family: "Oswald", sans-serif;
+    font-size: 5.3rem;
+    font-weight: 500;
+}
+.redtext {
+    font-family: "Oswald", sans-serif;
+    font-size: 5.3rem;
+    font-weight: 500;
+    color: rgb(170, 5, 5);
+}
+.redtext img {
+    height: 4.4rem;
+    margin-left: 0.7rem;
+}
+
+/* FORM  */
+#form {
+    position: relative;
+    background-color: whitesmoke;
+    width: 36%;
+    height: 46.62vh;
+    margin: 1.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0px 0px 22px grey;
+    display: grid;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.8fr;
+    justify-items: center;
+}
+h3 {
+    text-align: center;
+    text-decoration: underline solid #85c44b 3px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 1.9rem;
+}
+.input {
+    height: 70%;
+    width: 85%;
+    border-radius: 0.5rem;
+    border: 1px solid #85c44b;
+    font-size: 1rem;
+    font-family: "Baloo Bhaina 2";
+    font-weight: 200;
+    text-align: start;
+    padding-left: 5px;
+    transition: all 150ms ease-in-out;
+    outline: none;
+}
+.input:hover {
+    box-shadow: 0px 0px 14px rgb(157, 157, 157);
+}
+
+.btn {
+    color: white;
+    font-family: "Baloo Bhaina 2";
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(180, 5, 5);
+    width: 20.5%;
+    height: 34%;
+    text-align: center;
+    border: 0.5px solid grey;
+    transition: all 150ms ease-in-out;
+    padding-left: 0px !important;
+}
+.btn:hover {
+    box-shadow: 0px 0px 4px rgb(49, 49, 49);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Media Queries */
+@media (min-width: 842px) and (max-width: 1050px) {
+    #bigText {
+        height: 25vh;
+    }
+    .blackText {
+        font-size: 6rem;
+    }
+    .redtext {
+        font-size: 6rem;
+    }
+    .redtext img {
+        height: 5.2rem;
+    }
+    #form {
+        width: 50%;
+        height: 52.62vh;
+        margin: 0px 3rem;
+    }
+}
+@media (min-width: 641px) and (max-width: 842px) {
+    .dottedImg {
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        right: -3rem;
+    }
+    .dottedImg img {
+        height: 18rem;
+        width: 18rem;
+    }
+    .imageBgGradient {
+        display: none;
+    }
+    #bigText {
+        height: 27vh;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+        gap: 0px;
+    }
+    .blackText {
+        font-size: 6rem;
+    }
+    .redtext {
+        font-size: 6rem;
+    }
+    .redtext img {
+        height: 5rem;
+    }
+    #form {
+        width: 60%;
+        height: 39vh;
+        margin: 1rem 3rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .input {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 641px) {
+    .dottedImg {
+        display: block;
+        position: absolute;
+        bottom: -10%;
+        right: -3rem;
+    }
+    .dottedImg img {
+        height: 18rem;
+        width: 18rem;
+    }
+    .underHeader {
+        height: 8vh;
+    }
+    .imageBgGradient {
+        display: none;
+    }
+    #bigText {
+        margin-left: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: end;
+        height: 29vh;
+        gap: 0px;
+        position: relative;
+    }
+    .blackText {
+        font-size: 5rem;
+    }
+    .redtext {
+        font-size: 5rem;
+    }
+    .redtext img {
+        height: 4rem;
+    }
+    #form {
+        width: 75%;
+        height: 37vh;
+        margin: 1rem 3rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    .input {
+        font-size: 1rem;
+    }
+    .btn {
+        width: 22.5%;
+    }
+}
+@media (max-width: 400px) {
+    .dottedImg {
+        display: block;
+        position: absolute;
+        bottom: -16%;
+        right: -5rem;
+    }
+    .dottedImg img {
+        height: 18rem;
+        width: 18rem;
+    }
+    .imageBgGradient {
+        display: none;
+    }
+    #bigText {
+        height: 24vh;
+    }
+    .blackText {
+        font-size: 4rem;
+    }
+    .redtext {
+        font-size: 4rem;
+    }
+    .redtext img {
+        height: 3rem;
+    }
+    #form {
+        width: 80%;
+        height: 40vh;
+        margin: 1rem 2rem;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.8fr;
+    }
+    h3 {
+        font-size: 1.7rem;
+    }
+    .input {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 295px) {
+    .imageBgGradient {
+        display: none;
+    }
+    #bigText {
+        height: 27vh;
+    }
+    .blackText {
+        font-size: 3.5rem;
+    }
+    .redtext {
+        font-size: 3.5rem;
+    }
+    .redtext img {
+        height: 2rem;
+    }
+    .input {
+        font-size: 0.8rem;
+    }
+}

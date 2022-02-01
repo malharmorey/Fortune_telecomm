@@ -1,0 +1,24 @@
+extends base.pug
+
+block style 
+    style
+      include ../static/styles/base.css
+      include ../static/styles/business.css
+
+block scripts
+
+block content
+    main.wrapper 
+        div.greenImg.solid
+            img(src="/imgs/solidimg.png", alt="")
+        div.greenImg.dotted
+            img(src="/imgs/dottedimg.png", alt="")
+        section.container
+            div.card
+                h2 CCTV SECURITY SYSTEM 
+                p Leading security solutions provider in Maharastra,India , offering the assurance of a safe and secure workplace to businesses, governments and consumers. Combines the best-in-class technology with a highly trained workforce to offer the most efficient security solutions.
+                img(src="/imgs/arrows-small.png", alt="")
+            div.card
+                h2  EPABX SYSTEM 
+                p We offer best-in-class matrix epabx system, panasonic kx-tes824 epabx system, crystal epabx systems and digital epabx systems across India, To ensure uninterrupted communication between you and your workforce.
+                img(src="/imgs/arrows-small.png", alt="")

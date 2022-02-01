@@ -1,0 +1,26 @@
+extends base.pug
+
+block style 
+    style
+      include ../static/styles/base.css
+      include ../static/styles/contact.css
+
+block scripts
+
+block content 
+    main 
+        section.container 
+            div.gradientCircle
+            div.gradientTriangle
+            h1 CONTACT US
+            form(action="/contact", method="post", class="form") 
+                input(type="text", class="input", name="firstName", placeholder="First name")
+                input(type="text", class="input", name="lastName", placeholder="Last name")
+                input(type="email" , class="input", name="email", placeholder="Email")
+                input(type="text", class="input", name="contactNo", placeholder="Contact no.")
+                textarea#desc(cols="10", rows="5",name= "desc", placeholder="Type here...")
+
+                div.checkbox 
+                    input(type="checkbox" name="bestDeals" id="bestDeals" checked)  
+                    p Notify me about best deals.
+                button.btn Submit

@@ -1,0 +1,191 @@
+main {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+    height: 90vh;
+}
+.container {
+    position: relative;
+    margin-top: 1rem;
+    height: 75vh;
+    width: 37vw;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0px 0px 22px grey;
+    padding: 0.8rem 0rem;
+}
+.gradientCircle {
+    position: absolute;
+    height: 12rem;
+    width: 12rem;
+    background: linear-gradient(to right, #dce35b, #45b649);
+    left: -6rem;
+    top: 50%;
+    clip-path: circle(6rem at 6rem 6rem);
+    z-index: -1;
+}
+.gradientTriangle {
+    position: absolute;
+    background: linear-gradient(to right, #dce35b, #45b649);
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+    width: 12rem;
+    height: 12rem;
+    top: 1rem;
+    right: -7rem;
+    z-index: -1;
+}
+h1 {
+    text-align: center;
+
+    font-family: "Oswald", sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+form > input {
+    display: block;
+    width: 90%;
+    padding: 4px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 1rem;
+    margin: 0.2rem;
+    border-radius: 10px;
+    border: 1px solid #85c44b;
+    outline: none;
+}
+#desc {
+    display: block;
+    width: 90%;
+    padding: 5px;
+    font-family: "Baloo Bhaina 2";
+    font-size: 1rem;
+    margin: 0.3rem;
+    border-radius: 10px;
+    border: 1px solid #85c44b;
+    outline: none;
+}
+div.checkbox {
+    width: 90%;
+    font-size: 1rem;
+    margin: 0.4rem 0px;
+}
+#bestDeals {
+    display: inline;
+}
+div > p {
+    display: inline;
+    margin: 0px 4px;
+}
+.btn {
+    color: white;
+    background-color: rgb(180, 5, 5);
+    display: inline;
+    font-size: 1rem;
+    padding: 7px 21px;
+    border-radius: 10px;
+    border: 0.9px solid grey;
+    cursor: pointer;
+    transition: 300ms all ease;
+    margin-top: 0.4rem;
+}
+.btn:hover {
+    box-shadow: 0px 0px 4px rgb(49, 49, 49);
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+    main {
+        align-items: center;
+    }
+    .container {
+        margin-top: 0px;
+        height: 65vh;
+        width: 53vw;
+    }
+    form > input {
+        width: 90%;
+    }
+    #desc {
+        width: 90%;
+    }
+    div.checkbox {
+        width: 90%;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        margin-top: 0px;
+        height: 68vh;
+        width: 56vw;
+    }
+    form > input {
+        width: 90%;
+        margin: 0.3rem;
+    }
+    #desc {
+        width: 90%;
+    }
+    div.checkbox {
+        width: 90%;
+    }
+    .btn {
+        margin-top: 0.6rem;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        margin-top: 0px;
+        height: 65vh;
+        width: 74vw;
+    }
+    form > input {
+        font-size: 0.9rem;
+    }
+    #desc {
+        font-size: 0.9rem;
+    }
+    div.checkbox {
+        font-size: 0.9rem;
+    }
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 400px) {
+    .gradientCircle {
+        top: 75%;
+    }
+    .gradientTriangle {
+        top: -6rem;
+        right: -3rem;
+    }
+    .container {
+        margin-top: 0px;
+        height: 60vh;
+        width: 85vw;
+    }
+    form > input {
+        width: 90%;
+        margin: 0.2rem;
+        font-size: 0.8rem;
+    }
+    #desc {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    div.checkbox {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .btn {
+        margin-top: 0.4rem;
+        font-size: 0.8rem;
+    }
+}

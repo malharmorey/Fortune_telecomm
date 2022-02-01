@@ -1,0 +1,29 @@
+extends base.pug
+
+block style 
+    style
+      include ../static/styles/base.css
+      include ../static/styles/home.css
+
+block scripts
+    script(src="js/base.js" type="text/javascript") 
+
+block content
+    main
+        section.mainContainer
+            div.dottedImg
+                img(src="/imgs/dottedimg.png", alt="")
+            div.imageBgGradient
+                section.sideImage 
+                    img(src= "/imgs/cameras.png" )
+            section#bigText
+                p.blackText Go Get
+                p.redtext Secured
+                    img(src= "/imgs/right-arrow.png" )
+            form(action="/", method="post", id ="form")
+                div.heading
+                    h3 Book Our Visit
+                input.input(type='text', name="name", placeholder='Name')
+                input.input(type='number', name="contactNo", placeholder='Contact No' min="0000000000" max="9999999999")
+                input.input(type='text', name="siteAddress", placeholder='Site address')
+                button.btn.input Submit
