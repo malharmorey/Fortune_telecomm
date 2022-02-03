@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;700;900&family=DM+Serif+Display&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@200;300;400;700;900&family=Baloo+Bhaina+2:wght@400;500;600&family=DM+Serif+Display&family=Montserrat:wght@300;400;500&family=Oswald:wght@400;500;600&display=swap');
 
 /* CSS reset  */
 *,
@@ -27,7 +25,7 @@ header {
     margin-left: 10px;
 }
 .logo > p {
-    font-family: "DM Serif Display", serif;
+    font-family: 'DM Serif Display', serif;
 }
 #topText {
     text-align: center;
@@ -48,7 +46,7 @@ header {
 .navbar li {
     list-style: none;
     display: inline-block;
-    font-family: "Baloo Bhaina 2";
+    font-family: 'Baloo Bhaina 2';
     font-weight: 600;
 }
 .navbar li a {

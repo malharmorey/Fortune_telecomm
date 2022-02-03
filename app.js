@@ -2,7 +2,6 @@ const express = require('express');
 const path = require('path');
 const port = 8000;
 const app = express();
-const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 const alert = require('alert');
 
@@ -46,7 +45,6 @@ app.post('/', (req, res) => {
     visitData
         .save()
         .then(() => {
-            // res.send("Your form has been submitted sucessfully!");
             res.status(200).render('home.pug');
             alert('Form submited successfully!');
         })
