@@ -75,6 +75,6 @@ app.post('/Contact', (req, res) => {
 });
 
 //START SERVER
-app.listen(port, () => {
+app.listen(port, '127.0.0.1', () => {
     console.log(`The application is running at ${port}`);
 });
