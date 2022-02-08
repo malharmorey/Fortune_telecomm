@@ -95,6 +95,9 @@ td {
     }
 }
 @media (max-width: 480px) {
+    .wrapper {
+        height: 89vh;
+    }
     table {
         width: 80%;
     }
@@ -103,6 +106,9 @@ td {
     }
 }
 @media (max-width: 400px) {
+    .wrapper {
+        height: 88vh;
+    }
     th {
         font-size: 1.3rem;
     }

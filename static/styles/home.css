@@ -1,5 +1,5 @@
 main::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0px;
     right: 0px;
@@ -13,12 +13,17 @@ main::before {
     opacity: 0.92;
     height: 60%;
 }
+main {
+    /* position: relative; */
+    height: 90vh;
+}
 .mainContainer {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-x: clip;
+    height: 84vh;
 }
 .dottedImg {
     position: absolute;
@@ -30,7 +35,7 @@ main::before {
     width: 18rem;
     background: linear-gradient(to right, #dce35b, #45b649);
     right: 7rem;
-    top: 40%;
+    top: 38%;
     clip-path: circle(9rem at 9rem 9rem);
     display: flex;
     justify-content: center;
@@ -43,19 +48,19 @@ main::before {
 /* BIG-TEXT */
 #bigText {
     position: relative;
-    height: 25vh;
+    height: 24vh;
     display: flex;
     align-items: end;
     margin-left: 3rem;
     gap: 1rem;
 }
 .blackText {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 5.3rem;
     font-weight: 500;
 }
 .redtext {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 5.3rem;
     font-weight: 500;
     color: rgb(170, 5, 5);
@@ -70,18 +75,19 @@ main::before {
     position: relative;
     background-color: whitesmoke;
     width: 36%;
-    height: 46.62vh;
+    height: 54%;
     margin: 1.5rem 3rem;
     border-radius: 12px;
     box-shadow: 0px 0px 22px grey;
     display: grid;
     grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.8fr;
     justify-items: center;
+    min-height: 325px;
 }
 h3 {
     text-align: center;
     text-decoration: underline solid #85c44b 3px;
-    font-family: "Baloo Bhaina 2";
+    font-family: 'Baloo Bhaina 2';
     font-size: 1.9rem;
 }
 .input {
@@ -90,7 +96,7 @@ h3 {
     border-radius: 0.5rem;
     border: 1px solid #85c44b;
     font-size: 1rem;
-    font-family: "Baloo Bhaina 2";
+    font-family: 'Baloo Bhaina 2';
     font-weight: 200;
     text-align: start;
     padding-left: 5px;
@@ -103,7 +109,7 @@ h3 {
 
 .btn {
     color: white;
-    font-family: "Baloo Bhaina 2";
+    font-family: 'Baloo Bhaina 2';
     font-size: 1rem;
     font-weight: 500;
     background-color: rgb(180, 5, 5);
@@ -113,6 +119,7 @@ h3 {
     border: 0.5px solid grey;
     transition: all 150ms ease-in-out;
     padding-left: 0px !important;
+    margin-top: 0.5rem;
 }
 .btn:hover {
     box-shadow: 0px 0px 4px rgb(49, 49, 49);
@@ -123,7 +130,7 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"] {
+input[type='number'] {
     -moz-appearance: textfield;
 }
 
@@ -134,6 +141,7 @@ input[type="number"] {
     }
     .blackText {
         font-size: 6rem;
+        height: 6rem;
     }
     .redtext {
         font-size: 6rem;
@@ -142,8 +150,8 @@ input[type="number"] {
         height: 5.2rem;
     }
     #form {
-        width: 50%;
-        height: 52.62vh;
+        width: 40%;
+        height: 50%;
         margin: 0px 3rem;
     }
 }
@@ -151,50 +159,52 @@ input[type="number"] {
     .dottedImg {
         display: block;
         position: absolute;
-        bottom: -10%;
-        right: -3rem;
+        bottom: 10%;
+        right: 2rem;
     }
     .dottedImg img {
-        height: 18rem;
-        width: 18rem;
+        height: 22rem;
+        width: 22rem;
     }
     .imageBgGradient {
         display: none;
     }
     #bigText {
-        height: 27vh;
+        height: 23vh;
         flex-direction: column;
         align-items: flex-start;
         justify-content: end;
         gap: 0px;
     }
     .blackText {
-        font-size: 6rem;
+        font-size: 7rem;
+        height: 7rem;
     }
     .redtext {
-        font-size: 6rem;
+        font-size: 7rem;
     }
     .redtext img {
-        height: 5rem;
+        height: 5.7rem;
     }
     #form {
-        width: 60%;
-        height: 39vh;
-        margin: 1rem 3rem;
+        width: 62%;
+        height: 44%;
+        margin: 3rem 3rem;
+        min-height: 400px;
     }
     h3 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .input {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 @media (max-width: 641px) {
     .dottedImg {
         display: block;
         position: absolute;
-        bottom: -10%;
-        right: -3rem;
+        bottom: 4%;
+        right: -5rem;
     }
     .dottedImg img {
         height: 18rem;
@@ -211,12 +221,13 @@ input[type="number"] {
         flex-direction: column;
         align-items: flex-start;
         justify-content: end;
-        height: 29vh;
+        height: 25vh;
         gap: 0px;
         position: relative;
     }
     .blackText {
         font-size: 5rem;
+        height: 5.14rem;
     }
     .redtext {
         font-size: 5rem;
@@ -225,9 +236,10 @@ input[type="number"] {
         height: 4rem;
     }
     #form {
-        width: 75%;
-        height: 37vh;
-        margin: 1rem 3rem;
+        width: 84%;
+        height: 36vh;
+        margin: 1rem 2rem;
+        min-height: 322px;
     }
     h3 {
         font-size: 1.8rem;
@@ -243,7 +255,7 @@ input[type="number"] {
     .dottedImg {
         display: block;
         position: absolute;
-        bottom: -16%;
+        bottom: 2%;
         right: -5rem;
     }
     .dottedImg img {
@@ -258,6 +270,7 @@ input[type="number"] {
     }
     .blackText {
         font-size: 4rem;
+        height: 4.1rem;
     }
     .redtext {
         font-size: 4rem;
@@ -269,7 +282,7 @@ input[type="number"] {
         width: 80%;
         height: 40vh;
         margin: 1rem 2rem;
-        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.8fr;
+        min-height: 290px;
     }
     h3 {
         font-size: 1.7rem;
@@ -283,7 +296,8 @@ input[type="number"] {
         display: none;
     }
     #bigText {
-        height: 27vh;
+        height: 26vh;
+        margin: 0px 1rem;
     }
     .blackText {
         font-size: 3.5rem;
@@ -292,9 +306,18 @@ input[type="number"] {
         font-size: 3.5rem;
     }
     .redtext img {
-        height: 2rem;
+        height: 2.85rem;
     }
     .input {
         font-size: 0.8rem;
+    }
+    #form {
+        width: 88%;
+        height: 38vh;
+        margin: 1rem 1rem;
+        min-height: 247px;
+    }
+    h3 {
+        font-size: 1.6rem;
     }
 }

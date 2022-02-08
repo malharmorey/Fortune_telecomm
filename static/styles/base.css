@@ -23,6 +23,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    width: max-content;
 }
 .logo > p {
     font-family: 'DM Serif Display', serif;
@@ -30,12 +31,13 @@ header {
 #topText {
     text-align: center;
     font-size: 2rem;
+    height: 35px;
     font-weight: 900;
     color: #2c778f;
 }
 #bottomText {
     font-weight: 200;
-    font-size: 0.91rem;
+    font-size: 0.87rem;
     color: white;
     margin-bottom: 2px;
     text-align: center;
@@ -66,8 +68,14 @@ header {
 }
 .underHeader {
     position: relative;
-    height: 9vh;
+    height: 8vh;
     width: 100vw;
+    /* z-index: -2;
+    background: #dce35b;
+    background: -webkit-linear-gradient(to right, #45b649, #dce35b);
+    background: linear-gradient(to right, #45b649, #dce35b);
+    background-size: cover;
+    opacity: 0.92; */
 }
 
 /* FOOTER  */
@@ -90,13 +98,23 @@ header {
     header {
         grid-template-columns: 1.5fr 6fr 0fr;
     }
+    #topText {
+        font-size: 2.6rem;
+        height: 2.7rem;
+    }
+    #bottomText {
+        font-size: 1.14rem;
+    }
+    .navbar li a {
+        font-size: 1.5rem;
+    }
 }
 @media (max-width: 750px) {
     #topText {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     #bottomText {
-        font-size: 0.96rem;
+        font-size: 0.87rem;
     }
     .navbar {
         display: grid;
@@ -140,8 +158,8 @@ header {
         position: relative;
         display: none;
         justify-self: center;
-        margin-right: 0rem;
-        margin-top: 2rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
         margin-left: -5rem;
     }
     #navToggle:checked ~ #menu {
@@ -152,5 +170,27 @@ header {
 @media (max-width: 400px) {
     #footer {
         font-size: 0.6rem;
+    }
+}
+@media (max-width: 300px) {
+    .navToggle-Label span {
+        height: 1.5px;
+        width: 1.7em;
+    }
+    .navToggle-Label span:nth-child(3) {
+        top: 4px;
+    }
+    #menu {
+        margin-left: -3rem;
+    }
+    .navbar li a {
+        font-size: 1rem;
+    }
+    #topText {
+        font-size: 1.7rem;
+        height: 1.7rem;
+    }
+    #bottomText {
+        font-size: 0.75rem;
     }
 }
