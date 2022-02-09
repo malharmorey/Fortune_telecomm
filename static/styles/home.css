@@ -12,11 +12,11 @@ main::before {
     background-size: cover;
     opacity: 0.92;
     height: 60%;
-    min-height: 465px;
+    /* min-height: 465px; */
 }
 main {
     /* position: relative; */
-    height: 90vh;
+    height: 75vh;
 }
 .mainContainer {
     position: relative;
@@ -284,13 +284,17 @@ input[type='number'] {
         width: 80%;
         height: 40vh;
         margin: 1rem 2rem;
-        min-height: 290px;
+        min-height: 310px;
     }
     h3 {
         font-size: 1.7rem;
     }
 }
 @media (max-width: 295px) {
+    .dottedImg {
+        bottom: 15%;
+        right: -6rem;
+    }
     .imageBgGradient {
         display: none;
     }

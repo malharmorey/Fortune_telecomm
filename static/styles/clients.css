@@ -102,7 +102,7 @@ td {
         width: 80%;
     }
     td {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 400px) {
@@ -111,8 +111,5 @@ td {
     }
     th {
         font-size: 1.3rem;
-    }
-    td {
-        font-size: 0.8rem;
     }
 }
