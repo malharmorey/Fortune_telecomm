@@ -76,6 +76,7 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     padding: 0px 2rem;
+    font-size: 1rem;
 }
 .card img {
     position: absolute;
@@ -137,11 +138,11 @@
     }
     .card h2 {
         margin: 0.5rem 0rem 1rem 0rem;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .card p {
         padding: 0px 0.9rem;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 333px) {
