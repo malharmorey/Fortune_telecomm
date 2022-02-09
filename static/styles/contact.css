@@ -88,7 +88,8 @@ div > p {
     background-color: rgb(180, 5, 5);
     display: inline;
     font-size: 1rem;
-    padding: 7px 21px;
+    font-family: 'Baloo Bhaina 2';
+    padding: 0px 16px;
     border-radius: 10px;
     border: 0.9px solid grey;
     cursor: pointer;
@@ -165,22 +166,26 @@ div > p {
     }
     .container {
         margin-top: 2rem;
-        height: 65vh;
-        width: 85vw;
-        min-height: 500px;
+        height: 63vh;
+        width: 87vw;
+        min-height: 488px;
     }
     form > input {
         width: 90%;
         margin: 0.2rem;
         padding: 1px 4px;
+        font-size: 1rem;
     }
     #desc {
         width: 90%;
+        font-size: 1rem;
     }
     div.checkbox {
         width: 90%;
+        font-size: 1rem;
     }
     .btn {
         margin-top: 1rem;
+        font-size: 1rem;
     }
 }
