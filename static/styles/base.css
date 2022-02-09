@@ -8,7 +8,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+body {
+    height: 100vh;
+    min-height: max-content;
+    overflow-x: hidden;
+}
 /* NAVBAR  */
 header {
     display: grid;
@@ -37,7 +41,7 @@ header {
 }
 #bottomText {
     font-weight: 200;
-    font-size: 0.87rem;
+    font-size: 0.88rem;
     color: white;
     margin-bottom: 2px;
     text-align: center;

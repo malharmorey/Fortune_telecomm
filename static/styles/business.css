@@ -131,7 +131,8 @@
 }
 @media (max-width: 400px) {
     .container {
-        height: 78%;
+        height: 76%;
+        min-height: 469px;
     }
     .card h2 {
         margin: 0.5rem 0rem 1rem 0rem;

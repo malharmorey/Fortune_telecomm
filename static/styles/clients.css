@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 90%;
+    height: 99%;
     width: 100%;
     overflow-y: scroll;
     background: /* Shadow covers */ linear-gradient(
@@ -96,7 +96,7 @@ td {
 }
 @media (max-width: 480px) {
     .wrapper {
-        height: 89vh;
+        height: 80vh;
     }
     table {
         width: 80%;
@@ -107,7 +107,7 @@ td {
 }
 @media (max-width: 400px) {
     .wrapper {
-        height: 88vh;
+        height: 80vh;
     }
     th {
         font-size: 1.3rem;
