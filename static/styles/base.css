@@ -72,14 +72,8 @@ header {
 }
 .underHeader {
     position: relative;
-    height: 8vh;
+    height: 7vh;
     width: 100vw;
-    /* z-index: -2;
-    background: #dce35b;
-    background: -webkit-linear-gradient(to right, #45b649, #dce35b);
-    background: linear-gradient(to right, #45b649, #dce35b);
-    background-size: cover;
-    opacity: 0.92; */
 }
 
 /* FOOTER  */

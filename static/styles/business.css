@@ -127,13 +127,13 @@
     }
     .card p {
         padding: 0px 1rem;
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 @media (max-width: 400px) {
     .container {
-        height: 76%;
-        min-height: 469px;
+        height: 85%;
+        min-height: 528px;
     }
     .card h2 {
         margin: 0.5rem 0rem 1rem 0rem;

@@ -12,10 +12,8 @@ main::before {
     background-size: cover;
     opacity: 0.92;
     height: 60%;
-    /* min-height: 465px; */
 }
 main {
-    /* position: relative; */
     height: 75vh;
 }
 .mainContainer {
